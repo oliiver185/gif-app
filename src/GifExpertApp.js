@@ -13,13 +13,19 @@ const [categories, setCategories] = useState(['One Punch']);
     
     
     return (
-        <>
-             <h2>GifExpertApp</h2>
+    <>
+        <div className="container">
+             <h2 className="titulo">GifExpertApp<br/><span className="titulo-dos">Look for your favorite Gif on our website!</span></h2>
+             {/* <h2 className="titulo-dos"></h2> */}
+            
             <AddCategory setCategories= {setCategories} />
-            <hr />
+
+       </div>
+          
+        
            
 
-        <ol>
+        <ol className="grid-body">
             {
                 categories.map( category =>
                 <GifGrid key={category} category= {category} />              
@@ -27,7 +33,15 @@ const [categories, setCategories] = useState(['One Punch']);
             }
         </ol>
 
-        </>
+        <footer>
+            <div className="footer-container">
+               
+                <p> &copy; 2021 Oliver Petzey</p>
+           
+            </div>
+        </footer>
+
+    </>
     )
 }
 

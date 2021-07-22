@@ -6,8 +6,12 @@ export const GifGridItem = ({id,title, url}) => {
     return (
         <div className="card animate__animated animate__fadeIn">
            <img src={url} alt={title}  />
-           <p>{title}</p>
-           
+
+           {/* <p>{title}</p> */}
+
+           <div className="hover-galeria">
+               <a href={url}><p>{title}</p></a>
+           </div>
            
         </div>
     )

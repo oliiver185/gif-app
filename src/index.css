@@ -1,59 +1,163 @@
- *{
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Public+Sans:ital,wght@1,200&display=swap');
+* {
+  box-sizing: border-box;
 }
 
 body {
-  padding: 80px;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Otomanopee One', sans-serif;
+  background: #f2f2f2
 }
 
-input {
-  color: yellow;
-
-  font-size: 1.3 rem;
-  width: 100%;
- 
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0px; */
+  /* justify-content: space-around; */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M591.322%2c332.279C639.184%2c334.687%2c690.046%2c320.663%2c714.659%2c279.543C739.801%2c237.539%2c729.851%2c184.873%2c704.687%2c142.882C680.3%2c102.188%2c638.764%2c73.547%2c591.322%2c73.728C544.171%2c73.908%2c501.618%2c102.13%2c479.449%2c143.744C458.509%2c183.05%2c465.033%2c229.824%2c487.76%2c268.125C509.97%2c305.555%2c547.854%2c330.092%2c591.322%2c332.279' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M96.5823984431592 340.7191227826288L213.55308195803963 348.8985097716777 221.73246894708853 231.9278262567973 104.76178543220811 223.74843926774838z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M463.88948228323085 301.4742922779528L601.0615520752503 208.95056293033184 508.5378227276293 71.77849313831234 371.36575293560986 164.30222248593336z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M245.8185768252643 235.50022123577926L266.0989005984837 107.45529629451508 117.77365188400012 215.21989746255989z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1166.093%2c538.427C1207.028%2c537.659%2c1228.076%2c493.148%2c1246.111%2c456.392C1261.407%2c425.218%2c1269.551%2c390.497%2c1253.88%2c359.51C1236.613%2c325.368%2c1204.315%2c299.875%2c1166.093%2c298.176C1124.949%2c296.347%2c1082.927%2c314.654%2c1063.659%2c351.054C1045.311%2c385.715%2c1061.887%2c425.084%2c1080.699%2c459.496C1100.627%2c495.949%2c1124.555%2c539.206%2c1166.093%2c538.427' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1347.2507872278084 102.6101490739113L1391.267854994739 156.96670089830465 1450.7941488478637 63.76282333571191z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  border-bottom: 1px solid black;
 }
 
-
-.card {
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-border: 1px solid gray;
-border-radius: 6px;
-margin-bottom: 10px;
-margin-right: 10px;
-overflow: hidden;
-height: 350px;
-width: 250px;
-
-}
-
-
-.card p {
-  padding: 3px;
+.titulo {
+  color: white;
+  font-size: 50px;
+  padding: 40px 0px 20px 0px;
   text-align: center;
 }
 
-.card img {
- 
-  height: 200px;
-  width: 200px;
-  border-radius: 6px;
+.titulo-dos {
+  color: yellow;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+input {
+  outline: thin;
+  color: blue;
+  font-size: 1.3rem;
+  margin: 20px 0px;
+  padding: 7px 7px;
+  width: 300px;
+}
+
+.third-title {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.grid-body {
+  margin-left: -15px;
   
 }
 
 .card-grid {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-right: 0px;
+  padding: 0px 20px 0px 0px;
 }
 
-/*.card-grid{
-  height: 200px;
-  wi
-} 
+.card {
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 20%;
+}
+
+.card>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  background: rgba(94, 90, 97, 0.7);
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.hover-galeria a, p {
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Public Sans', sans-serif;
+  text-decoration: none;
+  
+}
+
+.card:hover .hover-galeria {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  /* opacity: 1; */
+}
+
+footer { 
+  background: #414141;
+  padding: 60px 0 30px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* .footer-container {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    /* margin: auto; */
+    /* padding-bottom: 50px; */
+    /* border-bottom: 1px solid #ccc */
+ 
+
+@media screen and (max-width:900px) {
+  .card {
+    width: 40%
+  }
+
+  .hover-galeria a, p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .card {
+    width: 80%
+  }
+  .titulo {
+    font-size: 30px;
+  }
+  .titulo-dos {
+    font-size: 15px;
+  }
+
+  input {
+    color: blue;
+  
+    margin: 20px 0px;
+    padding: 3px 3px;
+    width: 200px;
+  }
+}
+
+/*
  
 * {
   margin: 0;
