@@ -12,7 +12,8 @@ const AddCategory = ({setCategories}) => {
     }
 
     const handleSubmit = (e) => {
-          e.preventDefault();  
+          e.preventDefault(); 
+          
 
         if (inputValue.trim().length > 2){
           setCategories(cats => [inputValue, ...cats ]);
@@ -25,6 +26,7 @@ const AddCategory = ({setCategories}) => {
 
     return (       
         <form onSubmit={handleSubmit}>
+          <p>{inputValue}</p>
         <input
           type="text"
           value = {inputValue}

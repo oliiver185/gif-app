@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Working with <GifExpertApp/>  should show a list of categories 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <h2
+      className="titulo"
+    >
+      GifExpertApp
+      <br />
+      <span
+        className="titulo-dos"
+      >
+        Look for your favorite Gif on our website!
+      </span>
+    </h2>
+    <AddCategory
+      setCategories={[Function]}
+    />
+  </div>
+  <ol
+    className="grid-body"
+  >
+    <GifGrid
+      category="One Punch"
+      key="One Punch"
+    />
+    <GifGrid
+      category="Dragon Ball"
+      key="Dragon Ball"
+    />
+  </ol>
+  <footer>
+    <div
+      className="footer-container"
+    >
+      <p>
+         © 2021 Oliver Petzey
+      </p>
+    </div>
+  </footer>
+</Fragment>
+`;
+
+exports[` Working with <GifExpertApp/>  should work correctly 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <h2
+      className="titulo"
+    >
+      GifExpertApp
+      <br />
+      <span
+        className="titulo-dos"
+      >
+        Look for your favorite Gif on our website!
+      </span>
+    </h2>
+    <AddCategory
+      setCategories={[Function]}
+    />
+  </div>
+  <ol
+    className="grid-body"
+  />
+  <footer>
+    <div
+      className="footer-container"
+    >
+      <p>
+         © 2021 Oliver Petzey
+      </p>
+    </div>
+  </footer>
+</Fragment>
+`;

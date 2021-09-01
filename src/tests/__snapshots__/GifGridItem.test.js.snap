@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should show the component correctly should show the component correctly 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="hola"
+    src="htpps://localhost/algo.jpg"
+  />
+  <div
+    className="hover-galeria"
+  >
+    <a
+      href="htpps://localhost/algo.jpg"
+    >
+      <p>
+        hola
+      </p>
+    </a>
+  </div>
+</div>
+`;
